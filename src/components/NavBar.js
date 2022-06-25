@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 function NavBar({ navToggle }) {
   return (
-    <StyledNavBar>
+    <StyledNavBar className={`${navToggle ? 'nav-toggle' : ''}`}>
       <div className='Nav-Container'>
         <div className='logo'>
           <img src={logo} alt='Rick and Morty' />
@@ -55,6 +55,8 @@ const StyledNavBar = styled.nav`
   border-bottom: 1px solid var(--border-color);
   z-index: 10;
   @media (max-width: 767px) {
+    transform: translateY(-100%);
+    z-index: 20;
   }
 
   .Nav-Container {

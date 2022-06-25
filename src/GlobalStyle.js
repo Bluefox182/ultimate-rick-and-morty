@@ -108,6 +108,10 @@ body{
       font-size: 1.7rem;
       color: var(--white-color);
     }
+    @media (max-width: 767px) {
+    top: 5px;
+    transition: all 0.4s ease-in-out;
+  }
 
 }
 .left-content, .right-content {
