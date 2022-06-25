@@ -82,6 +82,8 @@ const StyledHome = styled.div`
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
+      padding-left: 10px;
+      padding-right: 10px;
     }
     .Left-Hero {
       width: 100%;
