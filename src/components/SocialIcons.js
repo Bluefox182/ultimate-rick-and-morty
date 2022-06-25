@@ -31,7 +31,8 @@ export default SocialIcons;
 const StyledSocialIcons = styled.div`
   display: flex;
   align-items: space-between;
-  justify-content: center;
+  justify-content: flex-end;
+  padding-right: 20px;
   position: fixed;
   right: 0;
   bottom: 50px;

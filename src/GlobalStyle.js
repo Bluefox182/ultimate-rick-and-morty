@@ -95,10 +95,10 @@ body{
 .light-dark-mode{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     position: fixed;
     right: 0;
-    top: 100px;
+    top: 70px;
     width: 6.5rem;
     height: 2.5rem;
     z-index: 15;
