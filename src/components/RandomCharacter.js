@@ -65,7 +65,7 @@ const StyledRandomCharacter = styled.div`
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     justify-content: space-between;
     align-items: center;
-    /* margin-bottom: 30px; */
+    margin-bottom: 30px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
