@@ -91,6 +91,7 @@ const StyledHome = styled.div`
       }
       button {
         margin-top: 40px;
+        width: 80%;
       }
     }
     .Right-Hero {
