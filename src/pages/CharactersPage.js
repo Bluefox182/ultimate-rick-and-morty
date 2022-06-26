@@ -11,7 +11,7 @@ function CharactersPage() {
   let [search, setSearch] = useState('');
   let { info, results } = fetchedData;
 
-  let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}&status=${status}&gender=${gender}&species=${species}`;
+  let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`;
 
   useEffect(() => {
     (async function () {
