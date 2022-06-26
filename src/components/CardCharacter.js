@@ -7,7 +7,7 @@ function CardCharacter({ page, results }) {
 
   if (results) {
     display = results.map((x) => {
-      let { id, image, name, status, location } = x;
+      let { id, image, name } = x;
 
       return (
         <StyledCardCharacter>

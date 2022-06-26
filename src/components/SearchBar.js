@@ -2,9 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 function SearchBar({ setSearch, updatePageNumber }) {
-  let searchBtn = (e) => {
-    e.preventDefault();
-  };
   return (
     <StyledSearchBar>
       <div className='Search'>

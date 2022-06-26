@@ -7,9 +7,6 @@ import Pagination from '../components/Pagination';
 
 function CharactersPage() {
   let [pageNumber, updatePageNumber] = useState(1);
-  let [status, updateStatus] = useState('');
-  let [gender, updateGender] = useState('');
-  let [species, updateSpecies] = useState('');
   let [fetchedData, updateFetchedData] = useState([]);
   let [search, setSearch] = useState('');
   let { info, results } = fetchedData;
