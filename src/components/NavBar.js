@@ -49,7 +49,7 @@ const StyledNavBar = styled.nav`
   background-color: transparent;
   width: 100%;
   padding: 0 10px;
-  position: fixed;
+  top: 0;
   background-color: var(--background-navbar-color);
   transition: all 0.4s ease-in-out;
   border-bottom: 1px solid var(--border-color);
@@ -88,23 +88,13 @@ const StyledNavBar = styled.nav`
       font-weight: 500;
       font-size: 12px;
       letter-spacing: 3px;
-      transition: all 0.4s ease-in-out;
+      transition: all 0.5s ease-in-out;
 
       :hover {
         color: var(--white-color-2);
-        transition: all 0.5s ease-in-out;
-      }
-
-      &::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 50%;
+        transition: all 0.8 ease-in-out;
         background-color: var(--primary-color);
-        transition: 0.35s;
-        z-index: -1;
+        z-index: 10;
       }
     }
     a:hover::before {

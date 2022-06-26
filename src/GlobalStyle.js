@@ -33,8 +33,7 @@ export const GlobalStyle = createGlobalStyle`
     --primary-color-light: #057FFF;
     --secondary-color: #6c757d;
     --background-navbar-color: #FFFFFF;
-    /* --background-dark-color: #F9F9F9; */
-    --background-dark-color: #F9F9F9;
+    --background-dark-color: #F9F3EE;
     --background-dark-grey: #e4e4e4;
     --border-color: #cbced8;
     --background-light-color: #F1F1F1;
@@ -81,6 +80,7 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     font-size: 1rem;
     overflow-x: hidden;
+    
     
 }
 

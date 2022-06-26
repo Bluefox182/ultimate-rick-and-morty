@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import SocialIcons from './components/SocialIcons';
 import ToggleMenu from './components/ToggleMenu';
+import CardDetails from './components/CardDetails';
 
 function App() {
   const [theme, setTheme] = useState('dark-theme');
@@ -67,6 +68,8 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/characters' element={<CharactersPage />} />
+          <Route path='characters/:id' element={<CardDetails />} />
+
           <Route path='/episodes' element={<EpisodesPage />} />
           <Route path='/locations' element={<LocationPage />} />
         </Routes>
