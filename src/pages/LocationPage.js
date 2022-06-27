@@ -26,31 +26,26 @@ function LocationPage() {
   }, [api]);
   return (
     <StyledLocation>
-      <div className='container'>
-        <div className='row mb-3'>
-          <h1 className='text-center mb-3'>
-            Location :
-            <span className='text-primary'>
-              {' '}
-              {name === '' ? 'Unknown' : name}
-            </span>
-          </h1>
-          <h5 className='text-center'>
-            Dimension: {dimension === '' ? 'Unknown' : dimension}
-          </h5>
-          <h6 className='text-center'>
-            Type: {type === '' ? 'Unknown' : type}
-          </h6>
+      <div className='Main-Container'>
+        <div className='Left-Container'>
+          <h1>Pick Location</h1>
+          <InputGroup name='Location' changeID={setNumber} total={126} />
         </div>
-        <div className='row'>
-          <div className='col-lg-3 col-12 mb-4'>
-            <h4 className='text-center mb-4'>Pick Location</h4>
-            <InputGroup name='Location' changeID={setNumber} total={126} />
+
+        <div className='Right-Container'>
+          <div className='Top-Locations '>
+            <h1>
+              Location :<span> {name === '' ? 'Unknown' : name}</span>
+            </h1>
+            <h1>
+              Dimension: <span>{dimension === '' ? 'Unknown' : dimension}</span>
+            </h1>
+            <h1>
+              Type: <span>{type === '' ? 'Unknown' : type}</span>
+            </h1>
           </div>
-          <div className='col-lg-8 col-12'>
-            <div className='row'>
-              <CardCharacter page='/location/' results={results} />
-            </div>
+          <div className='Card-Container'>
+            <CardCharacter page='/location/' results={results} />
           </div>
         </div>
       </div>
@@ -60,4 +55,60 @@ function LocationPage() {
 
 export default LocationPage;
 
-const StyledLocation = styled.div``;
+const StyledLocation = styled.div`
+  .Main-Container {
+    display: flex;
+    padding: 20px 0;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .Left-Container {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-light-color);
+    h1 {
+      font-size: 24px;
+      color: var(--primary-color-light);
+    }
+  }
+
+  .Right-Container {
+    width: 75%;
+    display: flex;
+    padding: 5px 0;
+    padding-right: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-light-color);
+  }
+
+  .Top-Locations {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .Card-Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  h1 {
+    font-size: 24px;
+    padding: 2px 0;
+  }
+  span {
+    font-size: 24px;
+    color: var(--primary-color-light);
+  }
+`;

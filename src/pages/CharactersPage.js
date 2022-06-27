@@ -28,7 +28,6 @@ function CharactersPage() {
       <div className='Main-Container'>
         <div className='Left-Container'>
           <div className='Filter-Container'>
-            <h1>Left Container</h1>
             <Filter
               pageNumber={pageNumber}
               status={status}

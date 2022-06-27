@@ -18,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     --white-color-2: #FFFFFF;
     --font-light-color: #F9F9F9;
     --font-light-color-2: #313131;
+    --font-light-color-3: #6c757d;
     --font-dark-color: #313131;
     --font-dark-color-2: #151515;
     --sidebar-dark-color: #191D2B;
@@ -44,6 +45,7 @@ export const GlobalStyle = createGlobalStyle`
     --font-light-color-2: #313131;
     --font-dark-color: #313131;
     --font-dark-color-2: #151515;
+    --font-light-color-3: #6c757d;
     --sidebar-dark-color: #F9F9F9;
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
@@ -63,6 +65,7 @@ export const GlobalStyle = createGlobalStyle`
     --white-color-2: #FFFFFF;
     --font-light-color: #FFFFFF;
     --font-light-color-2: #6c757d;
+    --font-light-color-3: #F9F9F9;
     --font-dark-color: #313131;
     --font-dark-color-2: #151515;
     --sidebar-dark-color: #111316;

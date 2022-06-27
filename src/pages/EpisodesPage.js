@@ -27,27 +27,24 @@ function EpisodesPage() {
 
   return (
     <StyledEpisodes>
-      <div className='container'>
-        <div className='row mb-3'>
-          <h1 className='text-center mb-3'>
-            Episode name :{' '}
-            <span className='text-primary'>
-              {name === '' ? 'Unknown' : name}
-            </span>
-          </h1>
-          <h5 className='text-center'>
-            Air Date: {air_date === '' ? 'Unknown' : air_date}
-          </h5>
-        </div>
-        <div className='row'>
-          <div className='col-lg-3 col-12 mb-4'>
-            <h4 className='text-center mb-4'>Pick Episode</h4>
+      <div className='Main-Container'>
+        <div className='Left-Container'>
+          <div>
+            <h1>Pick Episode</h1>
             <InputGroup name='Episode' changeID={setID} total={51} />
           </div>
-          <div className='col-lg-8 col-12'>
-            <div className='row'>
-              <CardCharacter page='/episodes/' results={results} />
-            </div>
+        </div>
+        <div className='Right-Container'>
+          <div className='Top-Episodes'>
+            <h1>
+              Episode Name : <span>{name === '' ? 'Unknown' : name}</span>
+            </h1>
+            <h1>
+              Air Date: <span>{air_date === '' ? 'Unknown' : air_date}</span>
+            </h1>
+          </div>
+          <div className='Card-Container'>
+            <CardCharacter page='/episodes/' results={results} />
           </div>
         </div>
       </div>
@@ -57,4 +54,60 @@ function EpisodesPage() {
 
 export default EpisodesPage;
 
-const StyledEpisodes = styled.div``;
+const StyledEpisodes = styled.div`
+  .Main-Container {
+    display: flex;
+    padding: 20px 0;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .Left-Container {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-light-color);
+    h1 {
+      font-size: 24px;
+      color: var(--primary-color-light);
+    }
+  }
+
+  .Right-Container {
+    width: 80%;
+    display: flex;
+    padding: 5px 0;
+    padding-right: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Top-Episodes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: var(--font-light-color);
+  }
+
+  .Card-Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  h1 {
+    font-size: 24px;
+    padding: 5px 0;
+  }
+  span {
+    font-size: 24px;
+    color: var(--primary-color-light);
+  }
+`;

@@ -76,6 +76,7 @@ const StyledNavBar = styled.nav`
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    font-family: 'Nunito', sans-serif;
     .active-class {
       color: var(--white-color-2);
       background-color: var(--primary-color-light);
@@ -84,10 +85,11 @@ const StyledNavBar = styled.nav`
       color: var(--font-light-color);
       text-decoration: none;
       position: relative;
+      font-family: 'Nunito', sans-serif;
       padding: 15px 20px;
-      font-weight: 500;
-      font-size: 12px;
-      letter-spacing: 3px;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 2px;
       transition: all 0.5s ease-in-out;
 
       :hover {

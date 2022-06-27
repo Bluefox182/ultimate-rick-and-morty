@@ -6,39 +6,21 @@ function Gender({ updateGender, updatePageNumber }) {
   let genders = ['female', 'male', 'genderless', 'unknown'];
   return (
     <StyledGender>
-      <div className='accordion-item'>
-        <h2 className='accordion-header' id='headingThree'>
-          <button
-            className='accordion-button collapsed'
-            type='button'
-            data-bs-toggle='collapse'
-            data-bs-target='#collapseThree'
-            aria-expanded='false'
-            aria-controls='collapseThree'
-          >
-            Gender
-          </button>
-        </h2>
-        <div
-          id='collapseThree'
-          className='accordion-collapse collapse'
-          aria-labelledby='headingThree'
-          data-bs-parent='#accordionExample'
-        >
-          <div className='accordion-body d-flex flex-wrap gap-3'>
-            {genders.map((items, index) => {
-              return (
-                <FilterButton
-                  name='gender'
-                  index={index}
-                  key={index}
-                  updatePageNumber={updatePageNumber}
-                  task={updateGender}
-                  input={items}
-                />
-              );
-            })}
-          </div>
+      <div className='Gender-List'>
+        <h2>Gender</h2>
+        <div className='Gender-Filter'>
+          {genders.map((items, index) => {
+            return (
+              <FilterButton
+                name='gender'
+                index={index}
+                key={index}
+                updatePageNumber={updatePageNumber}
+                task={updateGender}
+                input={items}
+              />
+            );
+          })}
         </div>
       </div>
     </StyledGender>
@@ -47,4 +29,9 @@ function Gender({ updateGender, updatePageNumber }) {
 
 export default Gender;
 
-const StyledGender = styled.div``;
+const StyledGender = styled.div`
+  .Gender-List h2 {
+    font-size: 18px;
+    color: var(--primary-color);
+  }
+`;

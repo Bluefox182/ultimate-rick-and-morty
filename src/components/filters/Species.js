@@ -18,39 +18,21 @@ function Species({ updateSpecies, updatePageNumber }) {
   ];
   return (
     <StyledSpecies>
-      <div className='accordion-item '>
-        <h2 className='accordion-header' id='headingTwo'>
-          <button
-            className='accordion-button collapsed'
-            type='button'
-            data-bs-toggle='collapse'
-            data-bs-target='#collapseTwo'
-            aria-expanded='false'
-            aria-controls='collapseTwo'
-          >
-            Species
-          </button>
-        </h2>
-        <div
-          id='collapseTwo'
-          className='accordion-collapse collapse'
-          aria-labelledby='headingTwo'
-          data-bs-parent='#accordionExample'
-        >
-          <div className='accordion-body d-flex flex-wrap gap-3'>
-            {species.map((item, index) => {
-              return (
-                <FilterButton
-                  name='species'
-                  index={index}
-                  key={index}
-                  updatePageNumber={updatePageNumber}
-                  task={updateSpecies}
-                  input={item}
-                />
-              );
-            })}
-          </div>
+      <div className='Species-List'>
+        <h2>Species</h2>
+        <div className='Species-Filter'>
+          {species.map((item, index) => {
+            return (
+              <FilterButton
+                name='species'
+                index={index}
+                key={index}
+                updatePageNumber={updatePageNumber}
+                task={updateSpecies}
+                input={item}
+              />
+            );
+          })}
         </div>
       </div>
     </StyledSpecies>
@@ -59,4 +41,9 @@ function Species({ updateSpecies, updatePageNumber }) {
 
 export default Species;
 
-const StyledSpecies = styled.div``;
+const StyledSpecies = styled.div`
+  .Species-List h2 {
+    font-size: 18px;
+    color: var(--primary-color);
+  }
+`;
