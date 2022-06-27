@@ -1,17 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import CardCharacter from '../components/CardCharacter';
 
+import CardCharacter from '../components/CardCharacter';
 import SearchBar from '../components/SearchBar';
 import Pagination from '../components/Pagination';
+import Filter from '../components/filters/Filter';
 
 function CharactersPage() {
   let [pageNumber, updatePageNumber] = useState(1);
+  let [status, updateStatus] = useState('');
+  let [gender, updateGender] = useState('');
+  let [species, updateSpecies] = useState('');
   let [fetchedData, updateFetchedData] = useState([]);
   let [search, setSearch] = useState('');
   let { info, results } = fetchedData;
 
-  let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`;
+  let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}&status=${status}&gender=${gender}&species=${species}`;
 
   useEffect(() => {
     (async function () {
@@ -25,6 +29,14 @@ function CharactersPage() {
         <div className='Left-Container'>
           <div className='Filter-Container'>
             <h1>Left Container</h1>
+            <Filter
+              pageNumber={pageNumber}
+              status={status}
+              updateStatus={updateStatus}
+              updateGender={updateGender}
+              updateSpecies={updateSpecies}
+              updatePageNumber={updatePageNumber}
+            />
           </div>
         </div>
         <div className='Right-Container'>
@@ -37,13 +49,13 @@ function CharactersPage() {
           <div className='Card-Container'>
             <CardCharacter results={results} />
           </div>
+          <Pagination
+            info={info}
+            pageNumber={pageNumber}
+            updatePageNumber={updatePageNumber}
+          />
         </div>
       </div>
-      <Pagination
-        info={info}
-        pageNumber={pageNumber}
-        updatePageNumber={updatePageNumber}
-      />
     </StyledCharactersPage>
   );
 }

@@ -71,7 +71,7 @@ const StyledCardCharacter = styled.div`
     font-family: 'Montserrat', sans-serif;
     :hover {
       background-color: #354259;
-      /* transform: scale(1.1); */
+      transform: scale(0.95);
       transition: 0.5s;
     }
   }

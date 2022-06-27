@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import SearchIcon from '@mui/icons-material/Search';
 
 function SearchBar({ setSearch, updatePageNumber }) {
   return (
     <StyledSearchBar>
       <div className='Search'>
-        <div class='icon'>{/* <img src={searchIcon} alt='search' /> */}</div>
+        <div class='icon'>
+          <SearchIcon />
+        </div>
         <input
           className='Search__input '
           type='text'
@@ -62,8 +65,8 @@ const StyledSearchBar = styled.div`
     font-family: 'Montserrat', sans-serif;
   }
 
-  .icon img {
+  .icon {
     width: 24px;
-    opacity: 0.4;
+    color: var(--secondary-color);
   }
 `;

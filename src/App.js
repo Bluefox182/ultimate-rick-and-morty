@@ -71,7 +71,10 @@ function App() {
           <Route path='characters/:id' element={<CardDetails />} />
 
           <Route path='/episodes' element={<EpisodesPage />} />
+          <Route path='/episodes/:id' element={<CardDetails />} />
+
           <Route path='/locations' element={<LocationPage />} />
+          <Route path='/location/:id' element={<CardDetails />} />
         </Routes>
       </MainContentStyled>
       <Footer />
