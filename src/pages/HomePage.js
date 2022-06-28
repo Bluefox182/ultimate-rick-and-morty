@@ -35,7 +35,9 @@ const StyledHome = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 80px 30px;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 30px;
   }
 
   .Left-Hero {

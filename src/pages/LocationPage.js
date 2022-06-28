@@ -68,7 +68,7 @@ const StyledLocation = styled.div`
   }
 
   .Left-Container {
-    width: 25%;
+    width: 20%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@ const StyledLocation = styled.div`
   }
 
   .Right-Container {
-    width: 75%;
+    width: 80%;
     display: flex;
     padding: 5px 0;
     padding-right: 30px;
