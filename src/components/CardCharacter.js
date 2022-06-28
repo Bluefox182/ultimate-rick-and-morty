@@ -42,6 +42,9 @@ const StyledCardCharacter = styled.div`
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    @media (max-width: 480px) {
+      width: 85%;
+    }
   }
 
   .Characters-Container img {

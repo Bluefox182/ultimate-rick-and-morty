@@ -60,6 +60,10 @@ const StyledEpisodes = styled.div`
     padding: 20px 0;
     width: 100%;
     font-family: 'Nunito', sans-serif;
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .Left-Container {
@@ -74,6 +78,9 @@ const StyledEpisodes = styled.div`
       font-size: 24px;
       color: var(--primary-color-light);
     }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
 
   .Right-Container {
@@ -84,6 +91,10 @@ const StyledEpisodes = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 480px) {
+      width: 100%;
+      padding-right: 0;
+    }
   }
 
   .Top-Episodes {

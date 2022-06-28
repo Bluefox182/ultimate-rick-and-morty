@@ -88,6 +88,9 @@ const StyledCharactersPage = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 480px) {
+      padding-right: 0;
+    }
     @media (max-width: 768px) {
       width: 100%;
     }
@@ -105,5 +108,8 @@ const StyledCharactersPage = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    @media (max-width: 480px) {
+      justify-content: center;
+    }
   }
 `;

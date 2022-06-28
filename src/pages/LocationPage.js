@@ -61,6 +61,10 @@ const StyledLocation = styled.div`
     padding: 20px 0;
     width: 100%;
     font-family: 'Nunito', sans-serif;
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .Left-Container {
@@ -75,6 +79,9 @@ const StyledLocation = styled.div`
       font-size: 24px;
       color: var(--primary-color-light);
     }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
 
   .Right-Container {
@@ -86,6 +93,10 @@ const StyledLocation = styled.div`
     justify-content: center;
     align-items: center;
     color: var(--font-light-color);
+    @media (max-width: 480px) {
+      width: 100%;
+      padding-right: 0;
+    }
   }
 
   .Top-Locations {
