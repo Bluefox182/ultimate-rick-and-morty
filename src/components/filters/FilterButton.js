@@ -38,19 +38,15 @@ const StyledFilterButton = styled.div`
       height: 30px;
       border: none;
       border-radius: 5px;
-      background-color: #42c2ff;
+      background-color: #354259;
       color: var(--white-color-2);
       font-size: 12px;
       cursor: pointer;
       outline: none;
       transition: background-color 0.2s ease-in-out;
       &:hover {
-        background-color: var(--primary-color);
+        background-color: #42c2ff;
         color: var(--white-color-2);
-      }
-      &:active {
-        background-color: var(--primary-color);
-        color: var(--font-light-color-3);
       }
     }
   }

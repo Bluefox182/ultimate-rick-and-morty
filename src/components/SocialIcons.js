@@ -35,8 +35,8 @@ const StyledSocialIcons = styled.div`
   padding-right: 20px;
   position: fixed;
   right: 0;
-  bottom: 50px;
-  width: 100px;
+  bottom: 100px;
+  width: 50px;
   z-index: 15;
   .icons {
     display: flex;
