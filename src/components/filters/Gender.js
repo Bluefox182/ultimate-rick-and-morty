@@ -33,5 +33,6 @@ const StyledGender = styled.div`
   .Gender-List h2 {
     font-size: 18px;
     color: var(--primary-color);
+    padding-top: 20px;
   }
 `;

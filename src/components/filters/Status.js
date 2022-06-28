@@ -29,8 +29,11 @@ function Status({ updateStatus, updatePageNumber }) {
 export default Status;
 
 const StyledStatus = styled.div`
-  .Status-List h2 {
-    font-size: 18px;
-    color: var(--primary-color);
+  .Status-List {
+    h2 {
+      font-size: 18px;
+      color: var(--primary-color);
+      padding-top: 20px;
+    }
   }
 `;

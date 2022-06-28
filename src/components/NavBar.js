@@ -9,7 +9,7 @@ function NavBar({ navToggle }) {
     <StyledNavBar className={`${navToggle ? 'nav-toggle' : ''}`}>
       <div className='Nav-Container'>
         <div className='logo'>
-          <img src={logo} alt='Rick and Morty' />
+          <img src={logo} alt='Rick Logo' />
         </div>
         <div className='nav-links'>
           <NavLink
@@ -87,8 +87,8 @@ const StyledNavBar = styled.nav`
       position: relative;
       font-family: 'Nunito', sans-serif;
       padding: 15px 20px;
-      font-weight: 700;
-      font-size: 16px;
+      font-weight: 500;
+      font-size: 14px;
       letter-spacing: 2px;
       transition: all 0.5s ease-in-out;
 

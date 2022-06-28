@@ -35,11 +35,10 @@ const StyledCardCharacter = styled.div`
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    width: 250px;
+    width: 200px;
     margin: 15px;
     border-radius: 30px;
     align-items: center;
-    /* gap: 20px; */
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);

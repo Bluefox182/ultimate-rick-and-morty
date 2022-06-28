@@ -5,9 +5,8 @@ function FilterButton({ input, task, updatePageNumber, index, name }) {
   return (
     <StyledFilterButton>
       <div className='Form-Container'>
-        <input
+        <button
           className='Form-Radio'
-          type='radio'
           name={name}
           id={`${name}-${index}`}
           onClick={(x) => {
@@ -15,8 +14,9 @@ function FilterButton({ input, task, updatePageNumber, index, name }) {
             updatePageNumber(1);
           }}
           for={`${name}-${index}`}
-        />
-        <label className='Form-Label'>{input}</label>
+        >
+          {input}
+        </button>
       </div>
     </StyledFilterButton>
   );
@@ -27,5 +27,31 @@ export default FilterButton;
 const StyledFilterButton = styled.div`
   .Form-Label {
     font-size: 12px;
+  }
+
+  .Form-Container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    button {
+      width: 70%;
+      height: 30px;
+      border: none;
+      border-radius: 5px;
+      background-color: #42c2ff;
+      color: var(--white-color-2);
+      font-size: 12px;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.2s ease-in-out;
+      &:hover {
+        background-color: var(--primary-color);
+        color: var(--white-color-2);
+      }
+      &:active {
+        background-color: var(--primary-color);
+        color: var(--font-light-color-3);
+      }
+    }
   }
 `;

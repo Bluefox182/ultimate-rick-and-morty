@@ -69,22 +69,28 @@ const StyledCharactersPage = styled.div`
   }
 
   .Left-Container {
-    width: 25%;
+    width: 20%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .Right-Container {
-    width: 75%;
+    width: 80%;
     display: flex;
     padding: 5px 0;
     padding-right: 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   .SearchBar {

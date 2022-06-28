@@ -40,6 +40,9 @@ const StyledSearchBar = styled.div`
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    @media (max-width: 480px) {
+      width: 90%;
+    }
   }
 
   .Search__input {
@@ -54,6 +57,9 @@ const StyledSearchBar = styled.div`
     line-height: 1.5;
     color: #000;
     outline: none;
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
   }
   .Search__input:focus {
     outline: none;
@@ -68,5 +74,10 @@ const StyledSearchBar = styled.div`
   .icon {
     width: 24px;
     color: var(--secondary-color);
+    svg {
+      @media (max-width: 480px) {
+        font-size: 18px;
+      }
+    }
   }
 `;

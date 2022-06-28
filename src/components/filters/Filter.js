@@ -13,13 +13,14 @@ function Filter({
   updateGender,
   updateSpecies,
 }) {
-  let clear = () => {
+  const clear = (e) => {
+    e.preventDefault();
     updateStatus('');
     updateGender('');
     updateSpecies('');
     updatePageNumber(1);
-    window.location.reload(false);
   };
+
   return (
     <StyledFilter>
       <div className='Filter-Container'>
@@ -31,7 +32,7 @@ function Filter({
           </div>
         </div>
 
-        <div>
+        <div className='Filter-Items'>
           <Status
             updatePageNumber={updatePageNumber}
             updateStatus={updateStatus}
@@ -55,6 +56,10 @@ export default Filter;
 const StyledFilter = styled.div`
   .Filter-Container {
     color: var(--font-light-color);
+    margin: 0 10px;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .Filter-Title {
