@@ -51,6 +51,9 @@ const StyledPagination = styled.div`
     list-style: none;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    @media (max-width: 480px) {
+      gap: 0;
+    }
     .page-item,
     .break {
       display: flex;
