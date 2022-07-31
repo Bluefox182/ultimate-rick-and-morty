@@ -5,8 +5,9 @@
 
 > Rick And Morty App. This App fetch data from the official Rick And Morty API. It shows a random character at the Landing Page and you can browse characters from the Character Page as well.
 
-# Deploy
+## Deploy
 This App has been deployed at Netlify and you can check it out here: https://bluefox-rick-and-morty.vercel.app/ .
+
 
 ## Project Description
 This a solo Front-End project to build a Rick And Morty App using ReactJs.
@@ -20,18 +21,18 @@ This a solo Front-End project to build a Rick And Morty App using ReactJs.
 ### Usage
 - In `ultimate-rick-and-morty` directory (You can run `pwd` to make sure), run `npm install` and then `npm start`, the project should automatically load on `http://localhost:3000`
 
-### Technologies
+## Technologies
 - React
 - NodeJs
 - CSS
 
-### Dependencies
+## Dependencies
 - Styled-Components
 - Material UI Icons
 - React-Router
 - React Paginate
 
-### API
+## API
 This project consumes the following API:
 - [Rick And Morty](https://rickandmortyapi.com/) The Official Rick And Morty API.
 
