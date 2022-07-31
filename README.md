@@ -6,7 +6,7 @@
 > Rick And Morty App. This App fetch data from the official Rick And Morty API. It shows a random character at the Landing Page and you can browse characters from the Character Page as well.
 
 ## Deploy
-This App has been deployed at Netlify and you can check it out here: https://bluefox-rick-and-morty.vercel.app/ .
+This App has been deployed at [Vercel](https://vercel.com/) and you can check it out here: https://bluefox-rick-and-morty.vercel.app/ .
 
 
 ## Project Description
