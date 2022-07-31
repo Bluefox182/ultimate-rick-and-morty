@@ -9,7 +9,7 @@
 This App has been deployed at Netlify and you can check it out here: https://bluefox-rick-and-morty.vercel.app/ .
 
 ## Project Description
-This a solo Front-End project to build a Weather App using ReactJs.
+This a solo Front-End project to build a Rick And Morty App using ReactJs.
 
 ## Installation and Usage
 
